@@ -1,0 +1,59 @@
+   fieldAverage1
+    {
+        type            fieldAverage;
+        libs 		("libfieldFunctionObjects.so");
+        enabled         true;
+        timeStart       230;
+        timeEnd         500;
+        writeControl   outputTime;
+        writeInterval   1;
+
+        fields
+        (
+            rhoU
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+            p
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            T
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            rho
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+ 
+             mu
+            {
+                mean        on;
+                prime2Mean  off;
+                base        time;
+            }
+             nuTilda
+            {
+                mean        on;
+                prime2Mean  off;
+                base        time;
+            }
+ 
+        );
+    }
